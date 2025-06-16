@@ -1,25 +1,18 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Navigation from './components/Navigation'
-import Hero from './components/Hero'
-import About from './components/About'
-import Services from './components/Services'
-import ProjectsShowcase from './components/ProjectsShowcase'
-import Partners from './components/Partners'
-import Portfolio from './components/Portfolio'
-import Contact from './components/Contact'
+import Home from './components/Home'
+import PortfolioPage from './components/PortfolioPage'
 
 function App() {
   return (
-    <div className="App">
-      <Navigation />
-      <Hero />
-      <About />
-      <Services />
-      <ProjectsShowcase />
-      <Partners />
-      <Portfolio />
-      <Contact />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
