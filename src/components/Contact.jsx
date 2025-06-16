@@ -1,4 +1,4 @@
-import './Contact.css'
+import "./Contact.css"
 
 const Contact = () => {
   return (
@@ -7,10 +7,10 @@ const Contact = () => {
         <div className="contact-content">
           <h2 className="contact-title">Let's Create Together</h2>
           <p className="contact-description">
-            Ready to bring your creative vision to life? Get in touch with us 
+            Ready to bring your creative vision to life? Get in touch with us
             and let's discuss your next project.
           </p>
-          
+
           <div className="contact-info">
             <div className="contact-item">
               <h4>Email</h4>
@@ -18,14 +18,22 @@ const Contact = () => {
             </div>
             <div className="contact-item">
               <h4>Portfolio</h4>
-              <a href="https://www.artstation.com/indomi_studio" target="_blank" rel="noopener noreferrer" className="artstation-link">
-                <img src="https://thb.tildacdn.net/tild6534-3962-4234-a235-626365333139/-/resize/20x/artstation-logo-whit.png" alt="ArtStation" />
+              <a
+                href="https://www.artstation.com/indomi_studio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="artstation-link"
+              >
+                <img
+                  src="https://optim.tildacdn.net/tild6534-3962-4234-a235-626365333139/-/resize/258x/-/format/webp/artstation-logo-whit.png.webp"
+                  alt="ArtStation"
+                />
                 View on ArtStation
               </a>
             </div>
           </div>
         </div>
-        
+
         <div className="contact-form">
           <form>
             <div className="form-group">
@@ -44,7 +52,11 @@ const Contact = () => {
               </select>
             </div>
             <div className="form-group">
-              <textarea placeholder="Tell us about your project" rows="5" required></textarea>
+              <textarea
+                placeholder="Tell us about your project"
+                rows="5"
+                required
+              ></textarea>
             </div>
             <button type="submit" className="submit-btn">
               Send Message
@@ -52,7 +64,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      
+
       <footer className="footer">
         <p>&copy; 2024 Indomi Studio. All rights reserved.</p>
       </footer>
