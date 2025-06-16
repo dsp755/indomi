@@ -197,6 +197,10 @@
 }
 
 @media (max-width: 768px) {
+  .projects-showcase {
+    padding: 4rem 0;
+  }
+
   .projects-title {
     font-size: 2.5rem;
   }
@@ -229,6 +233,7 @@
 
   .carousel-btn {
     position: static;
+    display: none;
   }
 
   .carousel-container .carousel-btn {

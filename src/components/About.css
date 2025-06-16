@@ -74,6 +74,10 @@
 }
 
 @media (max-width: 768px) {
+  .about {
+    padding: 4rem 0;
+  }
+
   .about-container {
     grid-template-columns: 1fr;
     gap: 2rem;

@@ -34,7 +34,7 @@
 }
 
 .service-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -85,7 +85,7 @@
 }
 
 .service-features li::before {
-  content: '→';
+  content: "→";
   position: absolute;
   left: 0;
   color: #deff00;
@@ -93,14 +93,18 @@
 }
 
 @media (max-width: 768px) {
+  .services {
+    padding: 4rem 0;
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .services-title {
     font-size: 2.5rem;
   }
-  
+
   .service-card {
     padding: 2rem;
   }

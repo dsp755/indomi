@@ -166,6 +166,10 @@
 }
 
 @media (max-width: 768px) {
+  .portfolio {
+    padding: 4rem 0;
+  }
+
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
