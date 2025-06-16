@@ -90,6 +90,10 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    background-attachment: scroll;
+  }
+  
   .hero-container {
     padding: 0 1rem;
   }
