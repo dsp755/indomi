@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './Navigation.css'
 import indomiLogo from '../assets/images/indomi-logo.png'
@@ -12,6 +12,23 @@ const Navigation = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
+  const handleAnchorClick = (sectionId) => {
+    setTimeout(() => {
+      const element = document.getElementById(sectionId)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    }, 100)
+  }
+
+  // Handle scrolling when coming from portfolio page with hash
+  useEffect(() => {
+    if (location.hash && isHome) {
+      const sectionId = location.hash.substring(1)
+      handleAnchorClick(sectionId)
+    }
+  }, [location.hash, isHome])
+
   return (
     <nav className="navigation">
       <div className="nav-container">
@@ -24,11 +41,11 @@ const Navigation = () => {
         <div className={`nav-menu ${isMenuOpen ? 'nav-menu-open' : ''}`}>
           {isHome ? (
             <>
-              <a href="#home" className="nav-link">Home</a>
-              <a href="#about" className="nav-link">About</a>
-              <a href="#services" className="nav-link">Services</a>
+              <a href="#home" className="nav-link" onClick={() => handleAnchorClick('home')}>Home</a>
+              <a href="#about" className="nav-link" onClick={() => handleAnchorClick('about')}>About</a>
+              <a href="#services" className="nav-link" onClick={() => handleAnchorClick('services')}>Services</a>
               <Link to="/portfolio" className="nav-link" onClick={handlePortfolioClick}>Portfolio</Link>
-              <a href="#contact" className="nav-link">Contact</a>
+              <a href="#contact" className="nav-link" onClick={() => handleAnchorClick('contact')}>Contact</a>
             </>
           ) : (
             <>
