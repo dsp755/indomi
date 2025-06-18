@@ -12,6 +12,8 @@ body {
   color: #eaeaea;
   line-height: 1.6;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -22,6 +24,36 @@ html {
 /* Ensure sections account for fixed navigation */
 section[id] {
   scroll-margin-top: 80px;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 60px;
+  }
+  
+  section[id] {
+    scroll-margin-top: 60px;
+  }
+  
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    scroll-padding-top: 50px;
+  }
+  
+  section[id] {
+    scroll-margin-top: 50px;
+  }
+  
+  body {
+    font-size: 13px;
+    line-height: 1.5;
+  }
 }
 
 .App {
