@@ -124,10 +124,6 @@
   transition: transform 0.3s ease;
 }
 
-.portfolio-item:hover .portfolio-item-overlay {
-  transform: translateY(0);
-}
-
 .portfolio-item-title {
   color: #ffffff;
   font-size: 1.1rem;
