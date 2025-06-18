@@ -30,7 +30,7 @@
   line-height: 1.6;
 }
 
-.portfolio-content {
+.portfolio-page-content {
   max-width: 1400px;
   margin: 0 auto;
   padding: 3rem 2rem;
@@ -152,7 +152,7 @@
     padding: 2rem 0;
   }
 
-  .portfolio-content {
+  .portfolio-page-content {
     padding: 2rem 1rem;
   }
 
