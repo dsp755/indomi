@@ -8,6 +8,10 @@ const Navigation = () => {
   const location = useLocation()
   const isHome = location.pathname === '/'
 
+  const handlePortfolioClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <nav className="navigation">
       <div className="nav-container">
@@ -23,7 +27,7 @@ const Navigation = () => {
               <a href="#home" className="nav-link">Home</a>
               <a href="#about" className="nav-link">About</a>
               <a href="#services" className="nav-link">Services</a>
-              <Link to="/portfolio" className="nav-link">Portfolio</Link>
+              <Link to="/portfolio" className="nav-link" onClick={handlePortfolioClick}>Portfolio</Link>
               <a href="#contact" className="nav-link">Contact</a>
             </>
           ) : (
@@ -31,7 +35,7 @@ const Navigation = () => {
               <Link to="/" className="nav-link">Home</Link>
               <Link to="/#about" className="nav-link">About</Link>
               <Link to="/#services" className="nav-link">Services</Link>
-              <Link to="/portfolio" className="nav-link">Portfolio</Link>
+              <Link to="/portfolio" className="nav-link" onClick={handlePortfolioClick}>Portfolio</Link>
               <Link to="/#contact" className="nav-link">Contact</Link>
             </>
           )}

@@ -1,8 +1,8 @@
 .projects-showcase {
-  padding: 8rem 0;
   background: #19181d;
   position: relative;
   overflow: hidden;
+  margin-bottom: 8rem;
 }
 
 .projects-container {

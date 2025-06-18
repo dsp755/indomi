@@ -2,13 +2,11 @@ import "./Hero.css"
 
 const Hero = () => {
   return (
-    <section
-      id="home"
-      className="hero"
-      style={{
-        backgroundImage: `url(https://optim.tildacdn.net/tild3461-6137-4662-b566-663330616337/-/resize/1920x/-/format/webp/indomi4.jpg)`,
-      }}
-    >
+    <section id="home" className="hero">
+      <img
+        src="https://optim.tildacdn.net/tild3461-6137-4662-b566-663330616337/-/resize/1920x/-/format/webp/indomi4.jpg"
+        alt=""
+      />
       <div className="hero-overlay"></div>
       <div className="hero-container">
         <div className="hero-content">
