@@ -28,7 +28,6 @@ const Contact = () => {
                   src="https://optim.tildacdn.net/tild6534-3962-4234-a235-626365333139/-/resize/258x/-/format/webp/artstation-logo-whit.png.webp"
                   alt="ArtStation"
                 />
-                View on ArtStation
               </a>
             </div>
           </div>
