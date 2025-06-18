@@ -157,10 +157,20 @@
   }
 
   .contact-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .contact-form {
     padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
   }
 }

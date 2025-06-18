@@ -170,7 +170,8 @@
 
 @media (max-width: 768px) {
   .portfolio {
-    padding: 4rem 0;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
   }
 
   .portfolio-grid {
@@ -184,5 +185,20 @@
   .portfolio-item {
     height: auto;
     min-height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .portfolio-title {
+    font-size: 1.8rem;
+  }
+
+  .portfolio-item {
+    min-height: 160px;
   }
 }

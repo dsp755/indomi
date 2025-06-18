@@ -71,7 +71,8 @@
 
 @media (max-width: 768px) {
   .partners {
-    padding: 4rem 0;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
   }
 
   .partners-title {
@@ -90,5 +91,30 @@
 
   .partner-logo {
     max-height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .partners-title {
+    font-size: 1.8rem;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .partner-item {
+    padding: 0.75rem;
+    min-height: 80px;
+  }
+
+  .partner-logo {
+    max-height: 50px;
   }
 }

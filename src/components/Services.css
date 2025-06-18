@@ -94,7 +94,8 @@
 
 @media (max-width: 768px) {
   .services {
-    padding: 4rem 0;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
   }
 
   .services-grid {
@@ -103,9 +104,26 @@
 
   .services-title {
     font-size: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .service-card {
     padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .services-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
   }
 }
